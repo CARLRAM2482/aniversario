@@ -1,0 +1,47 @@
+/* Estilos personalizados y fuentes */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf2f8; /* Un rosa muy suave de fondo */
+}
+
+.font-handwriting {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Animación de corazones cayendo */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    animation: fall 10s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ef4444; /* Rojo */
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+@keyframes fall {
+    0% { 
+        top: -10%; 
+        opacity: 1; 
+    }
+    100% { 
+        top: 110%; 
+        opacity: 0; 
+    }
+}
