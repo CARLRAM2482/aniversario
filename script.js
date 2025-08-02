@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- SCRIPT DE CORAZONES ---
     const heartsContainer = document.getElementById('hearts-container');
-    const hearts = 15; // Número de corazones
+    const hearts = 50; // Número de corazones
     
     if (heartsContainer) {
         for (let i = 0; i < hearts; i++) {
