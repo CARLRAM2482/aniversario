@@ -5,96 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestro Primer Año Juntos</title>
     
-    <!-- Tailwind CSS (necesario para los estilos base) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Enlace a tu archivo de estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="text-gray-800">
 
-    <!-- Contenedor para la animación de corazones -->
-    <div id="hearts-container" class="fixed top-0 left-0 w-full h-full pointer-events-none z-50"></div>
-
-    <div class="container mx-auto p-4 md:p-8 relative z-10">
-        
-        <!-- SECCIÓN PRINCIPAL -->
-        <header class="text-center my-12 md:my-16">
-            <h1 class="font-handwriting text-6xl md:text-8xl text-red-500">Maira & Carlos</h1>
-            <p class="text-xl md:text-2xl mt-4 text-gray-600">Nuestro Aniversario</p>
-            <p class="text-lg mt-2 text-gray-500">24 de Septiembre, 2025</p>
-        </header>
-
-        <!-- SECCIÓN DE CUENTA REGRESIVA -->
-        <section id="countdown-section" class="text-center mb-16">
-            <h3 class="text-2xl font-semibold text-red-500 mb-4">Faltan para nuestro día:</h3>
-            <div id="countdown" class="flex justify-center items-center space-x-2 md:space-x-4">
-                <!-- Los valores se insertarán aquí con JavaScript -->
-            </div>
-            <div id="anniversary-message" class="hidden text-4xl font-bold text-red-500 font-handwriting mt-4">
-                ¡Feliz Aniversario, mi amor!
-            </div>
-        </section>
-        
-
-        <main>
-            <!-- SECCIÓN DE VIDEOS -->
-            <section class="mb-16">
-                <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-12 text-red-400">Nuestros Momentos</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Bloque para una imagen local -->
-                <div class="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <img src="img/10.jpg" alt="Un recuerdo especial con Maira" class="w-full h-full object-cover rounded-md aspect-video">
-                <p class="mt-3 text-center text-gray-700 font-semibold">El día que nos conocimos</p></div>
-                    <!-- Bloque para un video local -->
-                <div class="bg-white p-4 rounded-lg shadow-lg">
-                <video controls class="w-full h-full rounded-md">
-                <source src="img/Video de WhatsApp 2025-08-01 a las 20.08.15_a5b13f5c.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-    </video>
-    <p class="mt-3 text-center text-gray-700 font-semibold">Eres mi todo</p>
-</div>
-                    <!-- Bloque para un video local -->
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-            <video controls class="w-full h-full rounded-md">
-        <source src="img/Video de WhatsApp 2025-08-01 a las 20.14.11_9b6a0dcf.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de video.
-    </video>
-    <p class="mt-3 text-center text-gray-700 font-semibold">Hermosa como nunca mi reina</p>
-</div>
-<!-- Bloque para una imagen local -->
-<div class="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-    <img src="img/20250716_2156_Pareja Relajada en Casa_remix_01k0b4wym3ewmb5sjt2hep5ns0.png" alt="Un recuerdo especial con Maira" class="w-full h-full object-cover rounded-md aspect-video">
-    <p class="mt-3 text-center text-gray-700 font-semibold">El día que nos conocimos</p></div>
-            </section>
-
-            <!-- SECCIÓN DEL MENSAJE -->
-            <section class="bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-3xl mx-auto">
-                <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-8 text-red-400">Para ti, mi amor</h2>
-                <p class="text-lg text-gray-700 leading-relaxed text-center">
-                    "Un año. 365 días que se sienten como un suspiro y, a la vez, como toda una vida a tu lado. Miro hacia atrás y no puedo evitar sonreír, porque cada día contigo ha sido un regalo.
-
-                    Gracias por las carcajadas espontáneas que me curan cualquier mal día, por cada abrazo que tiene el poder de reiniciar mi mundo y por esa paz que solo tú sabes darme. Gracias por enseñarme a ser mejor persona, por inspirarme a soñar más alto y por ser mi ancla en los momentos de tormenta. Contigo he aprendido que el amor no está solo en los grandes gestos, sino en los pequeños detalles: en un café por la mañana, en una mirada cómplice o en simplemente saber que estás ahí.
-                    
-                    No cambiaría ni un solo segundo de esta increíble aventura que hemos construido. Si este primer año ha sido la base, estoy emocionado por todo lo que vamos a construir encima. Si estos han sido nuestros primeros recuerdos, no puedo esperar a llenar álbumes enteros con los que nos quedan por delante.
-                    
-                    ¡Feliz aniversario, mi amor! Por este capítulo que cerramos y por los mil más que vamos a escribir juntos."
-                </p>
-                <p class="font-handwriting text-4xl text-right mt-8 text-red-500">- Con todo mi amor, Carlos</p>
-            </section>
-        </main>
-
-        <footer class="text-center mt-16 text-gray-500">
-            <p>Hecho con ❤️ para la mejor novia del mundo.</p>
-        </footer>
+    <!-- ======================================= -->
+    <!-- 1. NUEVO: Animación de Apertura (Loader) -->
+    <!-- ======================================= -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="font-handwriting text-6xl md:text-8xl text-white">Maira & Carlos</h1>
+        </div>
     </div>
 
-    <!-- Enlace a tu archivo de JavaScript -->
+    <!-- Contenedor principal de la página (inicialmente oculto) -->
+    <div id="main-content" class="hidden">
+        <div id="hearts-container" class="fixed top-0 left-0 w-full h-full pointer-events-none z-50"></div>
+
+        <div class="container mx-auto p-4 md:p-8 relative z-10">
+            
+            <header class="text-center my-12 md:my-16">
+                <h1 class="font-handwriting text-6xl md:text-8xl text-red-500">Maira & Carlos</h1>
+                <p class="text-xl md:text-2xl mt-4 text-gray-600">Nuestro Aniversario</p>
+                <p class="text-lg mt-2 text-gray-500">24 de Septiembre, 2025</p>
+            </header>
+
+            <section id="countdown-section" class="text-center mb-16">
+                <h3 class="text-2xl font-semibold text-red-500 mb-4">Faltan para nuestro día:</h3>
+                <div id="countdown" class="flex justify-center items-center space-x-2 md:space-x-4"></div>
+                <div id="anniversary-message" class="hidden text-4xl font-bold text-red-500 font-handwriting mt-4">
+                    ¡Feliz Aniversario, mi amor!
+                </div>
+            </section>
+        
+
+            <main>
+                <!-- ======================================= -->
+                <!-- 2. NUEVO: Galería de Fotos Polaroid     -->
+                <!-- ======================================= -->
+                <section class="mb-16">
+                    <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-12 text-red-400">Nuestra Galería</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
+                        
+                        <!-- Foto Polaroid 1 -->
+                        <div class="polaroid-card">
+                            <img src="imagenes/foto1.jpg" alt="Recuerdo 1" class="polaroid-img">
+                            <p class="polaroid-caption">Nuestra primera aventura</p>
+                        </div>
+
+                        <!-- Foto Polaroid 2 -->
+                        <div class="polaroid-card">
+                            <img src="https://placehold.co/600x600/f87171/ffffff?text=Tu+Foto+Aqu%C3%AD" alt="Recuerdo 2" class="polaroid-img">
+                            <p class="polaroid-caption">Ese día especial</p>
+                        </div>
+
+                        <!-- Foto Polaroid 3 -->
+                        <div class="polaroid-card">
+                        <img src="https://placehold.co/600x600/fb923c/ffffff?text=Tu+Foto+Aqu%C3%AD" alt="Recuerdo 3" class="polaroid-img">
+                            <p class="polaroid-caption">Simplemente nosotros</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-16">
+                    <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-12 text-red-400">Nuestros Momentos en Video</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Video 1 -->
+                        <div class="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-md w-full h-full"></iframe>
+                            </div>
+                            <p class="mt-3 text-center text-gray-700 font-semibold">Nuestro primer viaje</p>
+                        </div>
+                        <!-- ... más videos ... -->
+                    </div>
+                </section>
+
+                <!-- ======================================= -->
+                <!-- 3. NUEVO: Botón de Razones por las que te amo -->
+                <!-- ======================================= -->
+                <section class="text-center mb-16 bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-3xl mx-auto">
+                     <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-8 text-red-400">Unas cuantas razones...</h2>
+                     <div id="reason-display" class="text-2xl text-gray-700 min-h-[60px] flex items-center justify-center p-4 mb-6">
+                    <p>...por las que te amo tanto.</p>
+                     </div>
+                     <button id="reasons-button" class="bg-red-500 text-white font-bold py-3 px-6 rounded-full hover:bg-red-600 transition-colors duration-300 shadow-lg">
+                         Dame una razón más
+                     </button>
+                </section>
+
+
+                <section class="bg-white rounded-lg shadow-xl p-8 md:p-12 max-w-3xl mx-auto">
+                    <h2 class="font-handwriting text-5xl md:text-6xl text-center mb-8 text-red-400">Para ti, mi amor</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed text-center">
+                        Un año. 365 días que se sienten como un suspiro y, a la vez, como toda una vida a tu lado. Miro hacia atrás y no puedo evitar sonreír, porque cada día contigo ha sido un regalo...
+                    </p>
+                    <p class="font-handwriting text-4xl text-right mt-8 text-red-500">- Con todo mi amor, Carlos</p>
+                </section>
+            </main>
+
+            <footer class="text-center mt-16 text-gray-500">
+                <p>Hecho con ❤️ para la mejor novia del mundo.</p>
+            </footer>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
